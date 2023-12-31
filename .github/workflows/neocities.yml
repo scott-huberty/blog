@@ -25,10 +25,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: lts/*
+
       - name: Install deps and build
+        working-directory: ./public # Specify the path to your project
         run: |
           npm i
           npm run build
+
       # When the dist_dir is ready, deploy it to neocities
       - name: Deploy to neocities
         uses: bcomnes/deploy-to-neocities@v1
