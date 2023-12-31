@@ -1,6 +1,8 @@
+# .github/workflows/neocities.yml
+
 name: Deploy to neocities
 
-# only run on changes to master
+# only run on changes to main
 on:
   push:
     branches:
@@ -27,7 +29,7 @@ jobs:
           node-version: lts/*
 
       - name: Install deps and build
-        working-directory: ./public # Specify the path to your project
+        working-directory: ./public # Set the working directory to the 'public' directory
         run: |
           npm i
           npm run build
