@@ -2,10 +2,22 @@
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
 
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
 body {
   background-color: white;
   color: black;
   font-family: Verdana;
+  max-width: 80%;
+  /* Adjust the value as needed */
+  margin: 0 auto;
+  /* Center the content horizontally */
 }
 
 body.blog-page {
@@ -13,12 +25,9 @@ body.blog-page {
   /* Light grey background color for the blog page */
 }
 
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: center;
+p {
+  text-align: justify;
+  /* Optional: Justify the text for a clean look */
 }
 
 nav {
