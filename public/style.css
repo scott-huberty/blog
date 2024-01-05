@@ -10,6 +10,10 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 body {
   background-color: white;
   color: black;
@@ -28,6 +32,13 @@ body.blog-page {
 p {
   text-align: justify;
   /* Optional: Justify the text for a clean look */
+}
+
+.blog-post time {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  /* Adjust the margin as needed */
 }
 
 nav {
